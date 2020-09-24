@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/BaseAdapter/BaseAdapter.iml" filepath="$PROJECT_DIR$/.idea/modules/BaseAdapter/BaseAdapter.iml" group="My Application/BaseAdapter" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FlycoTabLayout_Lib/FlycoTabLayout_Lib.iml" filepath="$PROJECT_DIR$/.idea/modules/FlycoTabLayout_Lib/FlycoTabLayout_Lib.iml" group="My Application/FlycoTabLayout_Lib" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/My_Application.iml" filepath="$PROJECT_DIR$/.idea/modules/My_Application.iml" group="My_Application" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/immersionbar/immersionbar.iml" filepath="$PROJECT_DIR$/.idea/modules/immersionbar/immersionbar.iml" group="My Application/immersionbar" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/xiaolongbao/xiaolongbao.iml" filepath="$PROJECT_DIR$/.idea/modules/xiaolongbao/xiaolongbao.iml" group="My Application/xiaolongbao" />
+    </modules>
+  </component>
+</project>

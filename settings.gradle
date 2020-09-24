@@ -1,0 +1,5 @@
+include ':immersionbar'
+include ':BaseAdapter'
+include ':xiaolongbao'
+include ':FlycoTabLayout_Lib'
+rootProject.name = "My Application"

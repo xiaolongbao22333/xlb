@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bc2252bf-b2f2-484e-92c3-d71928dd53ad" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/consumer-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/java/assets/city.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/java/com/lx/xiaolongbao/app/BaseApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/java/com/lx/xiaolongbao/bean/BannerInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/java/com/lx/xiaolongbao/bean/CitiesData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/java/com/lx/xiaolongbao/bean/CityBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/java/com/lx/xiaolongbao/bean/CityDataBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/java/com/lx/xiaolongbao/utils/AutoUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/java/com/lx/xiaolongbao/utils/BannerGlideImageLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/java/com/lx/xiaolongbao/utils/CommonUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/java/com/lx/xiaolongbao/utils/DeviceInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/java/com/lx/xiaolongbao/utils/PickerViewUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/java/com/lx/xiaolongbao/utils/PopWinUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/java/com/lx/xiaolongbao/utils/ReflexUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/java/com/lx/xiaolongbao/utils/SpaceItemDecoration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/java/com/lx/xiaolongbao/utils/ThreadUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/java/com/lx/xiaolongbao/utils/ToastUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/java/com/lx/xiaolongbao/utils/WindowUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/java/com/lx/xiaolongbao/widget/AlignTextView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/java/com/lx/xiaolongbao/widget/AutoSplitTextView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/java/com/lx/xiaolongbao/widget/CenterAlignImageSpan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/java/com/lx/xiaolongbao/widget/CountDownTextView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/java/com/lx/xiaolongbao/widget/GridEntrust.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/java/com/lx/xiaolongbao/widget/JButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/java/com/lx/xiaolongbao/widget/JCheckBox.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/java/com/lx/xiaolongbao/widget/JEditText.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/java/com/lx/xiaolongbao/widget/JFrameLayout.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/java/com/lx/xiaolongbao/widget/JGridLayout.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/java/com/lx/xiaolongbao/widget/JGridView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/java/com/lx/xiaolongbao/widget/JHorizontalScrollView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/java/com/lx/xiaolongbao/widget/JImageView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/java/com/lx/xiaolongbao/widget/JLinearLayout.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/java/com/lx/xiaolongbao/widget/JListView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/java/com/lx/xiaolongbao/widget/JProgressBar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/java/com/lx/xiaolongbao/widget/JRecyclerView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/java/com/lx/xiaolongbao/widget/JRelativeLayout.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/java/com/lx/xiaolongbao/widget/JScrollView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/java/com/lx/xiaolongbao/widget/JTextView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/java/com/lx/xiaolongbao/widget/JView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/java/com/lx/xiaolongbao/widget/JViewGroup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/java/com/lx/xiaolongbao/widget/JViewPager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/java/com/lx/xiaolongbao/widget/LinearEntrust.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/java/com/lx/xiaolongbao/widget/MoreStyleImageView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/java/com/lx/xiaolongbao/widget/NumberPickerView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/java/com/lx/xiaolongbao/widget/SpacesItemDecoration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/java/com/lx/xiaolongbao/widget/SpacesItemDecorationEntrust.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/java/com/lx/xiaolongbao/widget/SquareItemLayout.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/java/com/lx/xiaolongbao/widget/StaggeredGridEntrust.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/java/com/lx/xiaolongbao/widget/UCTitleBar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/java/com/lx/xiaolongbao/window/Windows.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/res/anim/aplha_hide_hide_anim.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/res/anim/aplha_show_anim_style.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/res/anim/common_popwin_hide_anim.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/res/anim/common_popwin_show_anim.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/res/anim/down_list_hide_anim.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/res/anim/down_list_show_anim.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/res/anim/menuhide.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/res/anim/menushow.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/res/anim/popwin_b_to_t_hide.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/res/anim/popwin_b_to_t_show.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/res/anim/popwin_t_to_b_hide.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/res/anim/popwin_t_to_b_show.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/res/drawable-xhdpi/back.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/res/drawable-xhdpi/gouwuche_shuliangjianshao.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/res/drawable-xhdpi/gouwuche_shuliangzengjia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/res/drawable-xhdpi/guanbi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/res/drawable-xhdpi/icon_num_add.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/res/drawable-xhdpi/icon_num_sub.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/res/drawable-xhdpi/picker_cancel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/res/drawable/bg_button_left.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/res/drawable/bg_button_right.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/res/drawable/bg_number_bolder.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/res/drawable/bg_number_button.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/res/drawable/shape_fill_top_white_12dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/res/drawable/shape_fill_white_8dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/res/layout/include_divider_0_5_line.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/res/layout/number_button.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/res/layout/picker_date_options.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/res/layout/pickerview_custom_date_options2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/res/layout/popwin_business.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/res/layout/popwin_edit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/res/layout/popwin_not_title.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/res/layout/popwin_not_title_single_key.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/res/layout/popwin_select_epository_type.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/res/layout/popwin_title.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/res/layout/popwin_title_single_key.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/res/layout/uc_title_bar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/res/layout/view_pick.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/res/values/attrs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/res/values/dimen.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaolongbao/src/main/res/values/style.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1hwwQUMhFNXHyMqUIzK4UfD01a5" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="android.sdk.path" value="$PROJECT_DIR$/../../sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/xiaolongbao/src/main/res/layout" />
+    <property name="memory.settings.postsync.last.time.stamp" value="1600935922830" />
+    <property name="project.structure.last.edited" value="Variables" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="device.file.explorer" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/xiaolongbao/src/main" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.lx.xiaolongbao.utils" />
+      <recent name="com.lx.xiaolongbao.widget" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/xiaolongbao/src/main/res/layout" />
+      <recent name="$PROJECT_DIR$/xiaolongbao/src/main/res/drawable" />
+      <recent name="$PROJECT_DIR$/xiaolongbao/src/main/res/drawable-xhdpi" />
+      <recent name="$PROJECT_DIR$/xiaolongbao/src/main/res/anim" />
+      <recent name="$PROJECT_DIR$/xiaolongbao/src/main/java/com/lx/xiaolongbao" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bc2252bf-b2f2-484e-92c3-d71928dd53ad" name="Default Changelist" comment="" />
+      <created>1600935445041</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600935445041</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="245" y="174" key="#PSD" timestamp="1600939177750">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="245" y="174" key="#PSD/0.23.1440.825@0.23.1440.825" timestamp="1600939177750" />
+    <state x="353" y="38" key="CommitChangelistDialog2" timestamp="1600939336751">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="353" y="38" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1600939336751" />
+    <state x="320" y="175" key="Vcs.Push.Dialog.v2" timestamp="1600939343602">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="320" y="175" key="Vcs.Push.Dialog.v2/0.23.1440.825@0.23.1440.825" timestamp="1600939343602" />
+  </component>
+</project>
