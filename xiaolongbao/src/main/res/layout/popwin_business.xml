@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lx.xiaolongbao.widget.JLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="500px"
+    android:orientation="vertical">
+
+    <com.lx.xiaolongbao.widget.JRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px">
+
+        <com.lx.xiaolongbao.widget.JImageView
+            android:id="@+id/iv_cancel"
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:layout_centerVertical="true"
+            android:src="@drawable/guanbi"
+            app:JPadding="24px" />
+
+        <com.lx.xiaolongbao.widget.JTextView
+            android:id="@+id/tv_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingRight="24px"
+            android:text="确定"
+            android:textColor="#FF8819"
+            android:textSize="28px" />
+
+    </com.lx.xiaolongbao.widget.JRelativeLayout>
+
+    <com.lx.xiaolongbao.widget.JRecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px" />
+
+</com.lx.xiaolongbao.widget.JLinearLayout>

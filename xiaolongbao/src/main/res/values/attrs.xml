@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--共有属性-->
+    <attr name="JSelect" format="boolean" />
+    <attr name="JPadding" format="dimension" />
+    <attr name="JText_P" format="boolean" />
+    <attr name="JText" format="string" />
+    <attr name="JRadio" format="boolean" />
+    <attr name="JAutoX" format="boolean" />
+    <attr name="JHorizontal" format="boolean" />
+    <attr name="JReverse" format="boolean" />
+    <attr name="JClickGap" format="integer" />
+    <attr name="JEnable" format="boolean" />
+    <attr name="JNotEdit" format="boolean" />
+
+    <attr name="JHintSize" format="dimension" />
+    <attr name="JHintTextStyle" format="enum">
+        <enum name="bold" value="1" />
+        <enum name="italic" value="2" />
+        <enum name="normal" value="3" />
+    </attr>
+    <attr name="JTextStyle" format="enum">
+        <enum name="bold" value="1" />
+        <enum name="italic" value="2" />
+        <enum name="normal" value="3" />
+    </attr>
+
+    <declare-styleable name="MoreStyleImageView">
+        <attr name="JStyle">
+            <!--圆形-->
+            <enum name="JCircle" value="1" />
+            <!--顶部圆角-->
+            <enum name="JRound_rect_half" value="2" />
+            <!--圆角矩形-->
+            <enum name="JRound_rect" value="3" />
+        </attr>
+        <!--圆角弧度-->
+        <attr name="JRadian" format="dimension" />
+        <!--图片边距-->
+        <attr name="JSrcPadding" format="dimension" />
+        <!--开启旋转动画-->
+        <attr name="JAnimate" format="boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="JImageView">
+        <!--扩大点击区域, ImageView宽高 = 本身高宽 + Jpadding-->
+        <attr name="JPadding" />
+        <!--预览使用-->
+        <attr name="JSrc" format="reference" />
+        <!--与原生select效果一致, 添加XML支持-->
+        <attr name="JSelect" />
+        <!--两次点击间隔时间, 防暴力点击-->
+        <attr name="JClickGap" />
+    </declare-styleable>
+
+    <declare-styleable name="JEditText">
+        <!--光标是否始终在末尾-->
+        <attr name="JCursorEnd" format="boolean" />
+        <attr name="JHintSize" />
+        <attr name="JHintTextStyle" />
+        <attr name="JNotEdit" />
+
+        <attr name="JInputType" format="enum">
+            <enum name="money" value="1"/>
+            <enum name="money_int" value="2"/>
+        </attr>
+
+    </declare-styleable>
+
+
+    <declare-styleable name="JTextView">
+        <!--增加下划线-->
+        <attr name="JText_P" />
+        <!--预览使用-->
+        <attr name="JText" />
+        <!--与原生select效果一致, 添加XML支持-->
+        <attr name="JSelect" /><!--两次点击间隔时间, 防暴力点击-->
+        <attr name="JClickGap" />
+
+        <attr name="JHintSize" />
+        <attr name="JHintTextStyle" />
+        <attr name="JTextStyle" />
+
+    </declare-styleable>
+
+    <declare-styleable name="JCheckBox">
+        <!-- 代码改变状态不触发监听 -->
+        <attr name="JAutoEvent" format="boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="JButton">
+        <!--增加下划线-->
+        <attr name="JText_P" />
+        <!--预览使用-->
+        <attr name="JText" />
+        <!--与原生select效果一致, 添加XML支持-->
+        <attr name="JSelect" />
+        <!--两次点击间隔时间, 防暴力点击-->
+        <attr name="JClickGap" />
+    </declare-styleable>
+
+    <declare-styleable name="JRecyclerView">
+        <!--适配ScrollView显示一条item-->
+        <attr name="JAutoHeight" format="boolean" />
+        <!--适配ScrollView滑动冲突, 抢占焦点-->
+        <attr name="JAutoRoll" format="boolean" />
+        <!--item间距-->
+        <attr name="JDividerHeight" format="dimension" />
+        <!--横向布局-->
+        <attr name="JHorizontal" />
+        <!--倒序排列-->
+        <attr name="JReverse" />
+        <!--显示几排-->
+        <attr name="JSpanCount" format="integer" />
+        <!--空布局layout-->
+        <attr name="JEmptyLayout" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="JScrollView">
+        <!--拦截X方向滑动-->
+        <attr name="JInterceptX" format="boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="JLinearLayout">
+        <!--开启子控件单选效果-->
+        <attr name="JRadio" />
+        <!--与原生select效果一致, 添加XML支持-->
+        <attr name="JSelect" />
+        <!--两次点击间隔时间, 防暴力点击-->
+        <attr name="JClickGap" />
+    </declare-styleable>
+
+
+    <declare-styleable name="JRelativeLayout">
+        <!--开启子控件单选效果-->
+        <attr name="JRadio" />
+        <!--两次点击间隔时间, 防暴力点击-->
+        <attr name="JClickGap" />
+    </declare-styleable>
+
+
+    <declare-styleable name="JFrameLayout">
+        <!--开启子控件单选效果-->
+        <attr name="JRadio" />
+        <!--两次点击间隔时间, 防暴力点击-->
+        <attr name="JClickGap" />
+    </declare-styleable>
+
+    <declare-styleable name="JViewPager">
+        <!--适配列表事件冲突-->
+        <attr name="JAutoX" />
+        <!--启用Page翻页-->
+        <attr name="JScrollable" format="boolean" />
+        <!--滑动方向, 左右滑动还是上下滑动-->
+        <attr name="JOrientation">
+            <enum name="horizontal" value="1" />
+            <enum name="vertical" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="SwitchView">
+        <!--开启背景色-->
+        <attr name="JONBgColor" format="color" />
+        <!--关闭背景色-->
+        <attr name="JOFFBgColor" format="color" />
+        <!--按钮色-->
+        <attr name="JBtnColor" format="color" />
+        <!--开启显示的文字-->
+        <attr name="JONText" format="string" />
+        <!--关闭显示的文字-->
+        <attr name="JOFFText" format="string" />
+        <!--文字颜色-->
+        <attr name="JTextColor" format="color" />
+        <!--文字大小-->
+        <attr name="JTextSize" format="dimension" />
+        <!--按钮padding-->
+        <attr name="JPadding" />
+        <!--是否默认的打开-->
+        <attr name="JEnable" />
+    </declare-styleable>
+
+    <declare-styleable name="RectProgressBar">
+        <attr name="JStartColor" format="color" />
+        <attr name="JEndColor" format="color" />
+        <attr name="JBackground" format="color" />
+        <attr name="JProgress" format="float" />
+    </declare-styleable>
+
+</resources>

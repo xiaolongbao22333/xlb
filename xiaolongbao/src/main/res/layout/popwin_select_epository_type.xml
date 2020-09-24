@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lx.xiaolongbao.widget.JFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.lx.xiaolongbao.widget.JLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="382px"
+        android:background="@drawable/shape_fill_top_white_5dp"
+        android:orientation="vertical">
+
+        <com.lx.xiaolongbao.widget.JFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="86px">
+
+
+            <com.lx.xiaolongbao.widget.JTextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="32px"
+                android:paddingRight="32px"
+                android:text="取消"
+                android:textColor="#999999"
+                android:textSize="28px" />
+
+
+            <com.lx.xiaolongbao.widget.JTextView
+                android:id="@+id/tv_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:gravity="center"
+                android:paddingLeft="32px"
+                android:paddingRight="32px"
+                android:text="确定"
+                android:textColor="@color/color_2E2E2E"
+                android:textSize="28px" />
+
+
+        </com.lx.xiaolongbao.widget.JFrameLayout>
+
+
+        <cn.carbswang.android.numberpickerview.library.NumberPickerView
+            android:id="@+id/numberPickerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:npv_DividerColor="#E6E6E6"
+            app:npv_DividerHeight="1px"
+            app:npv_ShowCount="3"
+            app:npv_TextColorNormal="#999999"
+            app:npv_TextColorSelected="#333333"
+            app:npv_TextSizeNormal="15dp"
+            app:npv_TextSizeSelected="17dp">
+
+        </cn.carbswang.android.numberpickerview.library.NumberPickerView>
+
+
+
+    </com.lx.xiaolongbao.widget.JLinearLayout>
+
+
+</com.lx.xiaolongbao.widget.JFrameLayout>

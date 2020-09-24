@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lx.xiaolongbao.widget.JFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.lx.xiaolongbao.widget.JLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.lx.xiaolongbao.widget.JFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="43dp">
+
+            <com.lx.xiaolongbao.widget.JTextView
+                android:id="@+id/title"
+                app:JText="开始时间"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <com.lx.xiaolongbao.widget.JTextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="取消"
+                android:textColor="#999999"
+                android:textSize="14dp" />
+
+            <com.lx.xiaolongbao.widget.JTextView
+                android:id="@+id/tv_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:gravity="center"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="确定"
+                android:textColor="@color/color_2E2E2E"
+                android:textSize="14dp" />
+
+
+        </com.lx.xiaolongbao.widget.JFrameLayout>
+
+        <com.lx.xiaolongbao.widget.JView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#DDDDDD"/>
+
+        <LinearLayout
+            android:id="@+id/timepicker"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.contrarywind.view.WheelView
+                android:id="@+id/year"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <com.contrarywind.view.WheelView
+                android:id="@+id/month"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.1" />
+
+            <com.contrarywind.view.WheelView
+                android:id="@+id/day"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.1" />
+
+            <com.contrarywind.view.WheelView
+                android:id="@+id/hour"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.1" />
+
+            <com.contrarywind.view.WheelView
+                android:id="@+id/min"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.1" />
+
+            <com.contrarywind.view.WheelView
+                android:id="@+id/second"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.1" />
+        </LinearLayout>
+
+
+
+
+    </com.lx.xiaolongbao.widget.JLinearLayout>
+
+
+</com.lx.xiaolongbao.widget.JFrameLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lx.xiaolongbao.widget.JFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.lx.xiaolongbao.widget.JLinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/shape_fill_white_8dp"
+        android:layout_width="590px"
+        android:layout_gravity="center"
+        android:layout_height="305px">
+
+        <com.lx.xiaolongbao.widget.JTextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textColor="#2E2E2E"
+            android:textSize="28px"
+            android:layout_marginTop="57px"
+            android:paddingLeft="30px"
+            android:paddingRight="30px"
+            app:JText="XXX？"
+            android:layout_height="wrap_content"/>
+
+
+        <com.lx.xiaolongbao.widget.JTextView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="20px"
+            android:textColor="#999999"
+            android:textSize="24px"
+            android:paddingLeft="30px"
+            android:paddingRight="30px"
+            app:JText="XXX？"
+            android:layout_height="wrap_content"/>
+
+        <com.lx.xiaolongbao.widget.JView
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"/>
+
+
+        <com.lx.xiaolongbao.widget.JView
+            android:background="#E6E6E6"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+
+
+        <com.lx.xiaolongbao.widget.JFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="80px">
+
+            <com.lx.xiaolongbao.widget.JTextView
+                android:id="@+id/confirm"
+                android:layout_width="280px"
+                android:layout_height="80px"
+                android:text="确认"
+                android:gravity="center"
+                android:layout_gravity="bottom|right"
+                android:textSize="32px"
+                android:textColor="@color/color_2E2E2E"/>
+
+            <com.lx.xiaolongbao.widget.JTextView
+                android:id="@+id/cancel"
+                android:layout_width="280px"
+                android:layout_height="80px"
+                android:text="取消"
+                android:gravity="center"
+                android:layout_gravity="bottom"
+                android:textSize="32px"
+                android:textColor="#999999"/>
+
+            <com.lx.xiaolongbao.widget.JView
+                android:background="#E6E6E6"
+                android:layout_width="1px"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="match_parent"/>
+
+
+        </com.lx.xiaolongbao.widget.JFrameLayout>
+
+
+    </com.lx.xiaolongbao.widget.JLinearLayout>
+
+</com.lx.xiaolongbao.widget.JFrameLayout>

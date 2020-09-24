@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lx.xiaolongbao.widget.JLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="wrap_content"
+    android:layout_height="44px"
+    android:orientation="horizontal"
+    tools:ignore="MissingPrefix">
+
+    <com.lx.xiaolongbao.widget.JImageView
+        android:id="@+id/button_sub"
+        android:layout_width="40px"
+        android:layout_height="44px"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_num_sub" />
+
+    <com.lx.xiaolongbao.widget.JEditText
+        android:id="@+id/middle_count"
+        android:layout_width="wrap_content"
+        android:layout_height="44px"
+        android:background="@drawable/bg_number_bolder"
+        android:cursorVisible="true"
+        android:digits="0123456789"
+        android:gravity="center"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:minWidth="80px"
+        android:singleLine="true"
+        android:text="1"
+        android:textColor="@color/color_2E2E2E"
+        android:textCursorDrawable="@null"
+        android:textSize="28px" />
+
+    <com.lx.xiaolongbao.widget.JImageView
+        android:id="@+id/button_add"
+        android:layout_width="40px"
+        android:layout_height="44px"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_num_add" />
+
+</com.lx.xiaolongbao.widget.JLinearLayout>

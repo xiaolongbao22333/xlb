@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bar_rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="90px"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90px">
+
+        <ImageButton
+            android:id="@+id/ib_left"
+            android:layout_width="80px"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:src="@drawable/back"
+            android:textSize="16sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/lf_text"
+            android:textColor="#2e2e2e"
+            android:textSize="28px"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/ib_left" />
+
+        <TextView
+            android:id="@+id/bar_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="120px"
+            android:layout_marginRight="120px"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:textSize="36px" />
+
+        <ImageButton
+            android:id="@+id/ib_right"
+            android:layout_width="120px"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:textSize="32px"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingRight="30px"
+            android:textColor="#333333"
+            android:textSize="28px"
+            android:visibility="invisible" />
+
+        <include
+            android:id="@+id/bar_divider"
+            layout="@layout/include_divider_0_5_line"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

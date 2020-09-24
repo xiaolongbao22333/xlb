@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="NumberButton">
+        <attr name="editable" format="boolean" />
+        <attr name="buttonWidth" format="dimension" />
+        <attr name="editextWidth" format="dimension" />
+        <attr name="numTextSize" format="dimension" />
+        <attr name="numTextColor" format="color" />
+        <attr name="backgroud" format="reference" />
+        <attr name="individer" format="reference" />
+        <attr name="addBackground" format="reference" />
+        <attr name="subBackground" format="reference" />
+    </declare-styleable>
+
+    <!-- 末行对齐方式 -->
+    <declare-styleable name="AlignTextView">
+        <attr name="align" format="enum">
+            <enum name="left" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="right" value="2"/>
+        </attr>
+    </declare-styleable>
+
+    <!-- 标点转换 -->
+    <declare-styleable name="CBAlignTextView">
+        <attr name="punctuationConvert" format="boolean"/>
+    </declare-styleable>
+
+
+    <!--PopWin 动画-->
+
+    <style name="popwin_home_anim_style">
+        <item name="android:windowEnterAnimation">@anim/menushow</item>
+        <item name="android:windowExitAnimation">@anim/menuhide</item>
+    </style>
+
+    <style name="popwin_common_anim_style">
+        <item name="android:windowEnterAnimation">@anim/common_popwin_show_anim</item>
+        <item name="android:windowExitAnimation">@anim/common_popwin_hide_anim</item>
+    </style>
+
+    <style name="popwin_b_to_t_tran_anim_style">
+        <item name="android:windowEnterAnimation">@anim/popwin_b_to_t_show</item>
+        <item name="android:windowExitAnimation">@anim/popwin_b_to_t_hide</item>
+    </style>
+
+    <style name="popwin_t_to_b_anim_style">
+        <item name="android:windowEnterAnimation">@anim/popwin_t_to_b_show</item>
+        <item name="android:windowExitAnimation">@anim/popwin_t_to_b_hide</item>
+    </style>
+
+
+    <style name="list_popwin_anim_style">
+        <item name="android:windowEnterAnimation">@anim/down_list_show_anim</item>
+        <item name="android:windowExitAnimation">@anim/down_list_hide_anim</item>
+    </style>
+
+    <style name="popwin_aplha_anim_style">
+        <item name="android:windowEnterAnimation">@anim/aplha_show_anim_style</item>
+        <item name="android:windowExitAnimation">@anim/aplha_hide_hide_anim</item>
+    </style>
+</resources>
