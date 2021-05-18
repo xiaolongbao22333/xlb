@@ -16,6 +16,7 @@ import com.bigkoo.pickerview.view.TimePickerView
 import com.contrarywind.view.WheelView
 import com.lx.xiaolongbao.R
 import com.lx.xiaolongbao.bean.CityDataBean
+import com.lx.xiaolongbao.bean.Pcascode
 import com.lx.xiaolongbao.utils.PopWinUtils
 import com.lx.xiaolongbao.utils.ToastUtils
 import com.lx.xiaolongbao.widget.JEditText
@@ -26,7 +27,7 @@ import java.util.*
 import kotlin.collections.ArrayList
 
 
-object Windows {
+object WindowUtils {
 
 
     fun selectTime(activity: Activity, block: (ms: Long) -> Unit) {
@@ -358,7 +359,9 @@ object Windows {
                 cityList.add(citys[b]) //添加城市
                 val cityAreaList = java.util.ArrayList<CityDataBean>() //该城市的所有三级地区列表
                 //如果无地区数据，添加空字符串，防止数据为null 导致三个选项长度不匹配造成崩溃
-                if (citys[b] == null|| citys[b].cityList.size == 0) {
+                if (citys[b] == null
+                    || citys[b].cityList.size == 0
+                ) {
                     val cityDataBean = CityDataBean()
                     cityDataBean.cityName = ""
                     cityDataBean.cityId = ""
@@ -377,8 +380,162 @@ object Windows {
             options3Items.add(areaList)
         }
 
+        pvOptions = OptionsPickerBuilder(
+            activity,
+            object : OnOptionsSelectListener {
+                override fun onOptionsSelect(
+                    pos1: Int, pos2: Int, pos3: Int,v: View?
+                ) {
+                    block(
+                    options1Items[pos1].cityName,
+                    options1Items[pos1].cityId,
+                    options2Items[pos1][pos2].cityName,
+                    options2Items[pos1][pos2].cityId,
+                    options3Items[pos1][pos2][pos3].cityName,
+                    options3Items[pos1][pos2][pos3].cityId
+                )
+                }
+
+                override fun onOptionsSel(
+                    options1: Int,
+                    options2: Int,
+                    options3: Int,
+                    options4: Int,
+                    v: View?
+                ) {
+                    ToastUtils.show("options1:$options1---options2:$options2---options3:$options3---options4:$options4")
+
+                }
+            }
+                )
+            .setDividerColor(Color.BLACK)
+            .setTextColorCenter(Color.BLACK) //设置选中项文字颜色
+            .setContentTextSize(14)
+            .setDividerColor(Color.parseColor("#F2F2F5"))
+            .setDividerType(WheelView.DividerType.FILL)
+            .setDecorView(activity.window.decorView.findViewById(android.R.id.content))
+            .setLayoutRes(R.layout.view_pick) {
+                it.findViewById<JTextView>(R.id.cancel).setOnClickListener {
+                    pvOptions!!.dismiss()
+                }
+                it.findViewById<JTextView>(R.id.confirm).setOnClickListener {
+                    pvOptions!!.returnData()
+                    pvOptions!!.dismiss()
+                }
+            }
+            .setDecorView(activity.window.decorView.findViewById(android.R.id.content))
+            .build()
+        pvOptions!!.setPicker(options1Items, options2Items, options3Items)
+        pvOptions.show()
     }
 
+    fun selectCityF(
+        activity: Activity,
+        list: List<Pcascode>,
+        block: (name1: String, id1: String, name2: String, id2: String,
+                name3: String, id3: String, name4: String,id4: String) -> Unit
+    ) {
+        var pvOptions: OptionsPickerView<Pcascode>? = null
+        val options1Items: MutableList<Pcascode?> = ArrayList() //第一级数据源
+        val options2Items: MutableList<List<Pcascode?>> = ArrayList()//第二级数据源
+        val options3Items: MutableList<List<List<Pcascode?>>> =ArrayList() //第三级数据源
+        val options4Items: MutableList<List<List<List<Pcascode?>>>> = ArrayList() //第四级数据源
+        for (a in list.indices) {
+            options1Items.add(list[a])
+            val cityList: MutableList<Pcascode?> = ArrayList() //该省的城市列表（第二级）
+            val areaList: MutableList<List<Pcascode?>> = ArrayList() //该省的所有地区列表（第三级）
+            val districtList: MutableList<List<List<Pcascode?>>> =ArrayList() //该省的所有街道地区列表（第四级）
+            val citys = list[a].children //二级数据源
+            for (b in citys.indices) {
+                cityList.add(citys[b])
+                val cityAreaList =  ArrayList<Pcascode>() //三级
+                val cityDistrictList :MutableList<List<Pcascode>> =ArrayList()//四级
+                if (null == citys[b] || citys[b].children.size == 0) {
+                    val cityDataBean = Pcascode()
+                    cityDataBean.code = ""
+                    cityDataBean.name = ""
+                    cityDataBean.children = ArrayList()
+                    cityAreaList.add(cityDataBean)
+                } else {
+                    val areas = citys[b]!!.children //三级数据源
+                    for (c in areas.indices) {
+                        cityAreaList.add(areas[c])
+                        val lis=ArrayList<Pcascode>()
+                        if (null == areas[c] || areas[c].children.size == 0) {
+                            val cityDataBean = Pcascode()
+                            cityDataBean.name = ""
+                            cityDataBean.code = ""
+                            cityDataBean.children = ArrayList()
+                            lis.add(cityDataBean)
+                            cityDistrictList.add(lis)
+                        } else {
+                            lis.addAll(areas[c].children)
+                            cityDistrictList.add(lis)
+                        }
+                    }
+                    districtList.add(cityDistrictList)//添加地区街道数据
+                }
+                areaList.add(cityAreaList) //添加该省所有地区数据
+            }
+            //市
+            options2Items.add(cityList)
+            //区
+            options3Items.add(areaList)
+            //街道
+            options4Items.add(districtList)
+        }
+
+        pvOptions = OptionsPickerBuilder(
+            activity,
+            object : OnOptionsSelectListener {
+                override fun onOptionsSelect(
+                    pos1: Int, pos2: Int, pos3: Int,v: View?
+                ) {
+
+                }
+
+                override fun onOptionsSel(
+                    options1: Int,
+                    options2: Int,
+                    options3: Int,
+                    options4: Int,
+                    v: View
+                ) {
+                    block(
+                        options1Items[options1]!!.name,
+                        options1Items[options1]!!.code,
+                        options2Items[options1][options2]!!.name,
+                        options2Items[options1][options2]!!.code,
+                        options3Items[options1][options2][options3]!!.name,
+                        options3Items[options1][options2][options3]!!.code,
+                        options4Items[options1][options2][options3][options4]!!.name,
+                        options4Items[options1][options2][options3][options4]!!.code,
+                    )
+                    ToastUtils.show("options1:$options1---options2:$options2---options3:$options3---options4:$options4")
+
+                }
+            }
+        )
+            .setDividerColor(Color.BLACK)
+            .setTextColorCenter(Color.BLACK) //设置选中项文字颜色
+            .setContentTextSize(14)
+            .setDividerColor(Color.parseColor("#F2F2F5"))
+            .setDividerType(WheelView.DividerType.FILL)
+            .setDecorView(activity.window.decorView.findViewById(android.R.id.content))
+            .setLayoutRes(R.layout.view_pick) {
+                it.findViewById<JTextView>(R.id.cancel).setOnClickListener {
+                    pvOptions!!.dismiss()
+                }
+                it.findViewById<JTextView>(R.id.confirm).setOnClickListener {
+                    pvOptions!!.returnData()
+                    pvOptions!!.dismiss()
+                }
+            }
+            .setDecorView(activity.window.decorView.findViewById(android.R.id.content))
+            .build()
+        pvOptions!!.setPicker(options1Items, options2Items, options3Items,options4Items)
+        pvOptions.show()
+    }
     interface IMsg {
         fun getMsg(): String
     }
