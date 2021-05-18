@@ -4,7 +4,7 @@ apply plugin: 'kotlin-android-extensions'
 
 android {
     compileSdkVersion 30
-    buildToolsVersion "30.0.2"
+    buildToolsVersion "30.0.3"
 
     defaultConfig {
         minSdkVersion 21
@@ -38,25 +38,43 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     api 'com.orhanobut:logger:2.2.0'
     api 'com.github.xiaohaibin:XBanner:androidx_v1.0.8'
-    api "com.github.tamsiree.RxTool:RxFeature:2.6.2"
-    api 'com.github.tamsiree.RxTool:RxKit:2.6.2'
+
     api 'com.just.agentweb:agentweb:4.1.3'
-    api "androidx.lifecycle:lifecycle-runtime-ktx:2.2.0"
+//基础工具库
+    implementation 'com.github.tamsiree.RxTool:RxKit:2.6.2'
+    //UI库
+    implementation 'com.github.tamsiree.RxTool:RxUI:2.6.2'
+    //相机库
+    implementation 'com.github.tamsiree.RxTool:RxCamera:2.6.2'
+    //功能库（Zxing扫描与生成二维码条形码）
+    implementation 'com.github.tamsiree.RxTool:RxFeature:2.6.2'
     api 'com.blankj:utilcode:1.29.0'
     implementation 'com.github.bumptech.glide:glide:4.11.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
     api  'com.scwang.smart:refresh-layout-kernel:2.0.1'      //核心必须依赖
     api  'com.scwang.smart:refresh-header-classics:2.0.1'    //经典刷新头
-    api( 'com.contrarywind:Android-PickerView:4.1.9'){
-        exclude group: 'com.android.support'
-    }
+//    api( 'com.contrarywind:Android-PickerView:4.1.9'){
+//        exclude group: 'com.android.support'
+//    }
     api 'com.google.code.gson:gson:2.8.6'
     api 'com.github.GrenderG:Toasty:1.4.2'
     api 'cn.carbswang.android:NumberPickerView:1.1.1'
     api project(path: ':immersionbar')
     api project(path: ':BaseAdapter')
     api project(path: ':FlycoTabLayout_Lib')
+    api project(path: ':pickerview')
     //下载库
-    api 'com.arialyy.aria:core:3.8.5'
-    annotationProcessor 'com.arialyy.aria:compiler:3.8.5'
+    api 'com.arialyy.aria:core:3.8.15'
+    annotationProcessor 'com.arialyy.aria:compiler:3.8.15'
+
+    // 包含协程的 Activity lifecycle 扩展
+    api "androidx.lifecycle:lifecycle-runtime-ktx:2.2.0"
+
+    api 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.2'
+    api "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.2"
+    api 'com.squareup.retrofit2:retrofit:2.9.0'
+    api 'com.squareup.retrofit2:converter-gson:2.9.0'
+    api 'com.squareup.okhttp3:logging-interceptor:4.8.0'
+    api 'com.github.li-xiaojun:XPopup:2.3.2'
+
 }

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.jackchong.widget.JFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.lx.xiaolongbao.widget.JFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <com.jackchong.widget.JLinearLayout
+    <com.lx.xiaolongbao.widget.JLinearLayout
         android:orientation="vertical"
         android:background="@drawable/shape_fill_white_8dp"
         android:layout_width="590px"
         android:layout_gravity="center"
         android:layout_height="305px">
 
-        <com.jackchong.widget.JEditText
+        <com.lx.xiaolongbao.widget.JEditText
             android:id="@+id/edit"
             android:layout_width="380px"
             android:layout_height="60px"
@@ -23,23 +23,23 @@
             android:background="@drawable/shape_999999_stroke_5dp_1px"
             android:layout_gravity="center"/>
 
-        <com.jackchong.widget.JView
+        <com.lx.xiaolongbao.widget.JView
             android:layout_width="match_parent"
             android:layout_height="0px"
             android:layout_weight="1"/>
 
 
-        <com.jackchong.widget.JView
+        <com.lx.xiaolongbao.widget.JView
             android:background="#E6E6E6"
             android:layout_width="match_parent"
             android:layout_height="1px"/>
 
 
-        <com.jackchong.widget.JFrameLayout
+        <com.lx.xiaolongbao.widget.JFrameLayout
             android:layout_width="match_parent"
             android:layout_height="80px">
 
-            <com.jackchong.widget.JTextView
+            <com.lx.xiaolongbao.widget.JTextView
                 android:id="@+id/confirm"
                 android:layout_width="280px"
                 android:layout_height="80px"
@@ -47,9 +47,9 @@
                 android:gravity="center"
                 android:layout_gravity="bottom|right"
                 android:textSize="32px"
-                android:textColor="@color/theme"/>
+                android:textColor="@color/color_333333"/>
 
-            <com.jackchong.widget.JTextView
+            <com.lx.xiaolongbao.widget.JTextView
                 android:id="@+id/cancel"
                 android:layout_width="280px"
                 android:layout_height="80px"
@@ -59,16 +59,16 @@
                 android:textSize="32px"
                 android:textColor="#999999"/>
 
-            <com.jackchong.widget.JView
+            <com.lx.xiaolongbao.widget.JView
                 android:background="#E6E6E6"
                 android:layout_width="1px"
                 android:layout_gravity="center_horizontal"
                 android:layout_height="match_parent"/>
 
 
-        </com.jackchong.widget.JFrameLayout>
+        </com.lx.xiaolongbao.widget.JFrameLayout>
 
 
-    </com.jackchong.widget.JLinearLayout>
+    </com.lx.xiaolongbao.widget.JLinearLayout>
 
-</com.jackchong.widget.JFrameLayout>
+</com.lx.xiaolongbao.widget.JFrameLayout>
